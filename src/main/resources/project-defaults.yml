@@ -1,0 +1,17 @@
+thorntail:
+  bind:
+    address: localhost
+  microprofile:
+    jwt:
+      realm: auth-domain
+      token:
+        issued-by: "ch.zli.m223.example.auth"
+        signer-pub-key-location: classpath:security/public.crt
+  datasources:
+    data-sources:
+      AuthDS:
+        driver-name: postgresql
+        connection-url: jdbc:postgresql://localhost:5432/authDB
+        # connection-url: jdbc:postgresql://postgres:5432/authDB
+        user-name: root
+        password: password
