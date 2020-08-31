@@ -3,7 +3,7 @@
 ## Setup
 
 ### OpenJDK 11.0.2a
- 1. Die älteren Versionen können unter https://jdk.java.net/archive/gefunden werden.
+ 1. Die älteren Versionen können unter https://jdk.java.net/archive/ gefunden werden.
  1. Es ist sicherzustellen, dass die Umgebungsvariabeln (java_path, u. A.) passend festgelegt wurden.
  1. Mit `java -version` kann der Erfolg der Installation überprüft werden.
  
@@ -17,7 +17,17 @@
  1. Mit `docker --version` kann überprüft werden, ob die richtige Version installiert ist.
 
 ### Installation von Docker Compose 1.25.0
- 1.  Unter Windows ist Docker Compose im Docker Client beinhaltet, ansonsten installieren.
+ 1. Unter Windows ist Docker Compose im Docker Client beinhaltet, ansonsten installieren.
+ 1. Mit `docker-compose --version` kann überprüft werden, ob die richtige Version installiert ist.
+
+### Starten der PostgreSQL-Datenbank
+ 1. Das Verzeichnis des Repositories in einer Eingabeaufforderungöffnen.
+ 1. Docker Compose mit `docker-compose up -d` ausführen.
+
+### Starten des Backends
+ 1. Es ist sicherzustellen, dass der Port `8080` nicht beleget ist.
+ 1. Im Verzeichnis des Backends das Buildscript mit Maven ausführen: `mvn thorntail:run`
+ 1. `http://localhost:8080/` sollte der Server nach dem Start verfügbar sein.
 
 ## Ressourcen
 Diese Links haben geholfen beim Erstellen:
