@@ -8,6 +8,7 @@ import javax.annotation.security.PermitAll;
 import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.Produces;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
@@ -27,6 +28,7 @@ public class SessionController {
      */
     @POST
     @Consumes(value = MediaType.APPLICATION_JSON)
+    @Produces(value = MediaType.APPLICATION_JSON)
     @PermitAll
     public Response create(@Valid Credentials credentials) {
         return this.sessionService.authenticate(credentials);
