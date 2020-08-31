@@ -13,7 +13,7 @@
  1. Mit `mvn --version` kann überprüft werden, ob die richtige Version installiert ist.
  
 ### Docker 19.03.5-ce
- 1. Unter Windows ist der Einsatz vonhttps://docs.docker.com/docker-for-windows/install/ zu empfehlen.
+ 1. Unter Windows ist der Einsatz von https://docs.docker.com/docker-for-windows/install/ zu empfehlen.
  1. Mit `docker --version` kann überprüft werden, ob die richtige Version installiert ist.
 
 ### Installation von Docker Compose 1.25.0
